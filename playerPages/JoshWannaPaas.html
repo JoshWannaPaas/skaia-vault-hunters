@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <title>JasonnT</title>
+    <title>JoshWannaPaas</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="img/Skaia Vault Hunters.png" style="width:15%"></a>
+        <a href="../index.html"><img src="../img/Skaia Vault Hunters.png" style="width:15%"></a>
         <h1>Players</h1>
         <div class="wrapper">
             <nav>
@@ -35,9 +35,9 @@
     <p id="bailedVaults"></p>
     <p id="completedVaults"></p>
     <p id="lastPlayed"></p>
-    <div><img src="https://mc-heads.net/body/JasonnT"></div>
+    <div><img src="https://mc-heads.net/body/JoshWannaPaas"></div>
     <script>
-        fetch("playerSnapshots/9301b1b0-3d54-46b5-b603-7e1f708168a9.json")
+        fetch("playerSnapshots/5cddaf05-3161-4f4a-b812-5833b7075c9f.json")
             .then(response => response.json())
             .then(data => {
                 document.querySelector("#playerName").innerText = "Name: " + data.playerNickname
