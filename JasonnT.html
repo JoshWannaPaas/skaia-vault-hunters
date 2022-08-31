@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JasonnT</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/Skaia Vault Hunters.png" style="width:15%"></a>
+        <h1>Players</h1>
+        <div class="wrapper">
+            <nav>
+                <a href="JoshWannaPaas.html"><img src="https://mc-heads.net/avatar/JoshWannaPaas" style="width:3%"></a>
+                <a href="Tomiyee.html"><img src="https://mc-heads.net/avatar/Tomiyee" style="width:3%"></a>
+                <a href="VorpalParadox.html"><img src="https://mc-heads.net/avatar/VorpalParadox" style="width:3%"></a>
+                <a href="JasonnT.html"><img src="https://mc-heads.net/avatar/JasonnT" style="width:3%"></a>
+                <a href="Shizzle43.html"><img src="https://mc-heads.net/avatar/Shizzle43" style="width:3%"></a>
+                <a href="EmeraldMC18.html"><img src="https://mc-heads.net/avatar/EmeraldMC18" style="width:3%"></a>
+                <a href="Vorpalbrit.html"><img src="https://mc-heads.net/avatar/Vorpalbrit" style="width:3%"></a>
+                <a href="Jeremytt.html"><img src="https://mc-heads.net/avatar/Jeremytt" style="width:3%"></a>
+                <a href="goiman360.html"><img src="https://mc-heads.net/avatar/goiman360" style="width:3%"></a>
+                <a href="RedANDuwu.html"><img src="https://mc-heads.net/avatar/RedANDuwu" style="width:3%"></a>
+                <a href="BoofaMC.html"><img src="https://mc-heads.net/avatar/BoofaMC" style="width:3%"></a>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Skaia Vault Hunters</h1>
+    <p id="playerName"></p>
+    <p id="vaultLevel"></p>
+    <p id="powerLevel"></p>
+    <p id="totalVaults"></p>
+    <p id="deathsInVaults"></p>
+    <p id="bailedVaults"></p>
+    <p id="completedVaults"></p>
+    <p id="lastPlayed"></p>
+    <div><img src="https://mc-heads.net/body/JasonnT"></div>
+    <script>
+        fetch("playerSnapshots/9301b1b0-3d54-46b5-b603-7e1f708168a9.json")
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector("#playerName").innerText = "Name: " + data.playerNickname
+                document.querySelector("#vaultLevel").innerText = "Vault Level: " + data.vaultLevel
+                document.querySelector("#powerLevel").innerText = "Skill Points: " + data.powerLevel
+                document.querySelector("#totalVaults").innerText = "Total Vaults: " + data.vaultRuns
+                document.querySelector("#deathsInVaults").innerText = "Vault Deaths: " + data.vaultDeaths
+                document.querySelector("#bailedVaults").innerText = "Bailed Vaults: " + (data.vaultRuns - data.vaultWins)
+                document.querySelector("#completedVaults").innerText = "Vaults Completed: " + data.vaultWins
+
+                var date = new Date(data.timestamp * 1000)
+                var hours = date.getHours();
+                var minutes = "0" + date.getMinutes();
+                var AM = "AM"
+                if (hours > 12) {
+                    hours = hours % 12;
+                    AM = "PM"
+                }
+                document.querySelector("#lastPlayed").innerText = "Last Online: " + (date.getMonth() + 1) + "/" + date.getDate() + " " + hours + ':' + minutes.substr(-2) + AM
+            });
+    </script>
+
+
+</body>
+
+</html>

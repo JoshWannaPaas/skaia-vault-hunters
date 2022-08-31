@@ -1,0 +1,92 @@
+{
+  "playerUUID": "babcf3e3-e604-4a65-a2d4-3a22c9b137ab",
+  "playerNickname": "BoofaMC",
+  "timestamp": 1656113697,
+  "vaultRuns": 5,
+  "vaultWins": 5,
+  "vaultDeaths": 0,
+  "artifactCount": 0,
+  "inVault": false,
+  "powerLevel": 23,
+  "vaultLevel": 16,
+  "levelPercent": 0.35716668,
+  "attributes": {
+    "minecraft:generic.max_health": 22.0,
+    "minecraft:generic.knockback_resistance": 0.0,
+    "minecraft:generic.movement_speed": 0.12000000208616257,
+    "minecraft:generic.attack_damage": 1.0,
+    "minecraft:generic.attack_knockback": 0.0,
+    "minecraft:generic.attack_speed": 4.4000000059604645,
+    "minecraft:generic.armor": 14.0,
+    "minecraft:generic.armor_toughness": 0.0,
+    "minecraft:generic.luck": 0.0,
+    "botania:pixie_spawn_chance": 0.0,
+    "forge:swim_speed": 1.0,
+    "forge:nametag_distance": 64.0,
+    "forge:entity_gravity": 0.08,
+    "forge:reach_distance": 6.0,
+    "the_vault:generic.crit_chance": 0.0,
+    "the_vault:generic.crit_multiplier": 0.0,
+    "the_vault:generic.tp_chance": 0.0,
+    "the_vault:generic.indirect_tp_chance": 0.0,
+    "the_vault:generic.tp_range": 32.0,
+    "the_vault:generic.potion_resistance": 0.0,
+    "the_vault:generic.size_scale": 1.0,
+    "the_vault:generic.break_armor_chance": 0.0
+  },
+  "favors": {
+    "Velara": 0,
+    "Tenos": 0,
+    "Wendarr": 0,
+    "Idona": 0
+  },
+  "parry": 0.0,
+  "resistance": 0.0,
+  "cooldownReduction": 0.0,
+  "fatalStrikeChance": 0.0,
+  "fatalStrikeDamage": 0.0,
+  "thornsChance": 0.0,
+  "thornsDamage": 0.0,
+  "equipment": {
+    "FEET": {
+      "itemKey": "minecraft:netherite_boots",
+      "count": 1,
+      "nbt": "{RepairCost:7,Enchantments:[{lvl:4s,id:\"minecraft:protection\"},{lvl:3s,id:\"minecraft:unbreaking\"},{lvl:1s,id:\"minecraft:mending\"}],Damage:0}"
+    },
+    "LEGS": {
+      "itemKey": "minecraft:netherite_leggings",
+      "count": 1,
+      "nbt": "{Enchantments:[{lvl:4,id:\"protection\"},{lvl:3,id:\"unbreaking\"},{lvl:1,id:\"mending\"}],Damage:2}"
+    },
+    "CHEST": {
+      "itemKey": "minecraft:netherite_chestplate",
+      "count": 1,
+      "nbt": "{RepairCost:3,\"quark:RuneAttached\":1b,Enchantments:[{lvl:4s,id:\"minecraft:protection\"},{lvl:1s,id:\"minecraft:mending\"},{lvl:3s,id:\"minecraft:unbreaking\"}],\"quark:RuneColor\":{id:\"quark:blue_rune\",Count:59b},Damage:2}"
+    },
+    "HEAD": {
+      "itemKey": "minecraft:netherite_helmet",
+      "count": 1,
+      "nbt": "{Damage:0,Enchantments:[{lvl:4,id:\"protection\"},{lvl:3,id:\"unbreaking\"},{lvl:1,id:\"mending\"},{lvl:1,id:\"aqua_affinity\"},{lvl:3,id:\"respiration\"}]}"
+    }
+  },
+  "abilities": {
+    "Cleanse": 1,
+    "Dash": 3,
+    "Rampage": 1,
+    "Tank": 1,
+    "Vein Miner": 1
+  },
+  "talents": {
+    "Well Fit": 1,
+    "Speed": 1,
+    "Haste": 1,
+    "Experienced": 1,
+    "Elvish": 1,
+    "Unbreakable": 1,
+    "Reach": 1
+  },
+  "researches": [
+    "Waystones"
+  ],
+  "eternals": []
+}
