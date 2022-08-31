@@ -3,6 +3,25 @@
 
 <head>
     <title>VorpalParadox</title>
+    <style>
+        body {
+            background-image: url("../img/Martin's Base.jpg");
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        h1 {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 5.5%;
+        }
+        
+        h2,
+        p {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,8 +45,7 @@
         </div>
     </header>
 
-    <h1>Skaia Vault Hunters</h1>
-    <p id="playerName"></p>
+    <h2 id="playerName"></h2>
     <p id="vaultLevel"></p>
     <p id="powerLevel"></p>
     <p id="totalVaults"></p>
@@ -40,7 +58,7 @@
         fetch("../playerSnapshots/0f02e5aa-28bd-418d-9e1b-6c4626c688f0.json")
             .then(response => response.json())
             .then(data => {
-                document.querySelector("#playerName").innerText = "Name: " + data.playerNickname
+                document.querySelector("#playerName").innerText = data.playerNickname
                 document.querySelector("#vaultLevel").innerText = "Vault Level: " + data.vaultLevel
                 document.querySelector("#powerLevel").innerText = "Skill Points: " + data.powerLevel
                 document.querySelector("#totalVaults").innerText = "Total Vaults: " + data.vaultRuns

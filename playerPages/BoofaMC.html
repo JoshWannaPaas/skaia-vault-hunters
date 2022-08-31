@@ -26,8 +26,7 @@
         </div>
     </header>
 
-    <h1>Skaia Vault Hunters</h1>
-    <p id="playerName"></p>
+    <h2 id="playerName"></h2>
     <p id="vaultLevel"></p>
     <p id="powerLevel"></p>
     <p id="totalVaults"></p>
@@ -40,7 +39,7 @@
         fetch("../playerSnapshots/babcf3e3-e604-4a65-a2d4-3a22c9b137ab.json")
             .then(response => response.json())
             .then(data => {
-                document.querySelector("#playerName").innerText = "Name: " + data.playerNickname
+                document.querySelector("#playerName").innerText = data.playerNickname
                 document.querySelector("#vaultLevel").innerText = "Vault Level: " + data.vaultLevel
                 document.querySelector("#powerLevel").innerText = "Skill Points: " + data.powerLevel
                 document.querySelector("#totalVaults").innerText = "Total Vaults: " + data.vaultRuns

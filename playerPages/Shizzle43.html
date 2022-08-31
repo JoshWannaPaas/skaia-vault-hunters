@@ -3,6 +3,20 @@
 
 <head>
     <title>Shizzle43</title>
+    <style>
+        body {
+            background-image: url("../img/Shizzle's Base.jpg");
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        h2,
+        p,
+        h1 {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,8 +40,7 @@
         </div>
     </header>
 
-    <h1>Skaia Vault Hunters</h1>
-    <p id="playerName"></p>
+    <h2 id="playerName"></h2>
     <p id="vaultLevel"></p>
     <p id="powerLevel"></p>
     <p id="totalVaults"></p>
@@ -40,7 +53,7 @@
         fetch("../playerSnapshots/ff718601-3c5c-46d7-b6e7-50ee9bf7614f.json")
             .then(response => response.json())
             .then(data => {
-                document.querySelector("#playerName").innerText = "Name: " + data.playerNickname
+                document.querySelector("#playerName").innerText = data.playerNickname
                 document.querySelector("#vaultLevel").innerText = "Vault Level: " + data.vaultLevel
                 document.querySelector("#powerLevel").innerText = "Skill Points: " + data.powerLevel
                 document.querySelector("#totalVaults").innerText = "Total Vaults: " + data.vaultRuns
