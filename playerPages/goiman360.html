@@ -37,7 +37,7 @@
     <p id="lastPlayed"></p>
     <div><img src="https://mc-heads.net/body/goiman360"></div>
     <script>
-        fetch("playerSnapshots/22cc87e2-46eb-4f3c-a8c7-54ccba27aa84.json")
+        fetch("../playerSnapshots/22cc87e2-46eb-4f3c-a8c7-54ccba27aa84.json")
             .then(response => response.json())
             .then(data => {
                 document.querySelector("#playerName").innerText = "Name: " + data.playerNickname
